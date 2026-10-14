@@ -1,0 +1,35 @@
+# Unity / Tuanjie generated files
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+**/[Bb]uild/
+**/[Bb]uilds/
+**/[Mm]emoryCaptures/
+**/[Rr]ecordings/
+
+# Local editor and agent settings
+.codely-cli/
+**/.vscode/
+**/.vs/
+**/.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Local credentials and operating system files
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
