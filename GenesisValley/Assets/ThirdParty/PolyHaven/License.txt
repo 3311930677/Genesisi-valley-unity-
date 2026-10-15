@@ -1,0 +1,11 @@
+Poly Haven assets (https://polyhaven.com) — CC0 1.0 Universal (public domain).
+Ground textures (2k, resized/renamed for Genesis Valley):
+  T_Ground_Grass      <- leafy_grass
+  T_Ground_Meadow     <- forrest_ground_01 (lighter grade)
+  T_Ground_ForestFloor<- brown_mud_leaves_01
+  T_Ground_Path       <- rocky_trail
+  T_Ground_Cliff      <- aerial_rocks_02
+  T_Ground_Riverbank  <- river_small_rocks
+  T_Ground_Soil       <- muddy_tracks
+  (_N = OpenGL-convention normal maps, as used by Unity)
+Sky: T_Sky_PartlyCloudy.hdr <- kloofendal_48d_partly_cloudy_puresky
