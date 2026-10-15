@@ -10,7 +10,7 @@
 - **目标平台**：Windows PC，后续 Steam Demo
 - **制作方式**：个人或小团队，使用 AI Coding Agent 辅助实现
 - **V1 核心范围**：500×500 米世界、初始 10 位居民（常规 20～50 人）、最多 4 人合作（房主运行模拟）、约 30 分钟完整发展循环、存档/载入
-- **⚠️ 当前状态：工程已搭建、游戏代码未开始**。`GenesisValley/` 已用 3D(URP) 空白模板创建（2026-10-15）并完成首次导入，尚无任何游戏功能；GDD 是拟定规格，所有功能均未实现。
+- **当前状态（0.9.0）**：单机 V1 玩法、美术、音频、UI、存档已在 `GenesisValley/Assets/Game/` 实现（约 2.2 万行 C#），第三方 CC0 素材在 `Assets/ThirdParty/`；四人联机未实现。详见 `PROJECT_STATUS.md`，首次打开按 `docs/SETUP.md` 运行菜单「Genesis Valley › 一键配置」。
 
 ## 目录结构
 
@@ -38,7 +38,7 @@
 | 10 | 技术架构与工程组织 | | 18 | AI Coding Agent 使用规范 |
 | 19 | 十张参考图用途与生图规范 | | 20-22 | 风险降级、开工清单、官方资料 |
 
-## 计划中的技术架构（GDD 第 10 节，代码尚未落地）
+## 技术架构（GDD 第 10 节，已落地；Networking/ 尚未创建）
 
 `Assets/Game/` 下分为：`Core/`（时钟、ID、命令、事件、配置）、`World/`（高度、水、生态、空间查询）、`Simulation/`（需求、任务、库存、聚落规划）、`Buildings/`、`Presentation/`、`UI/`、`Networking/`、`Persistence/`、`Editor/`、`Tests/`、`Art/ Configs/ Scenes/`。
 
