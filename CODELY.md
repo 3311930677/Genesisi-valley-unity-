@@ -88,9 +88,11 @@
 
 ### Feedback
 - [2026-10-15 03:21:38] 本机用 `tuanjie.exe install <semver>` 装编辑器不可靠：先因 C 盘空间校验(需3.86GB)直接 download_failed，空间清理后又报 INSTALL_ERROR（Hub 日志在 %APPDATA%\TuanjieHub\logs\info-log.json，CLI 仍显示 Successful，不可只看退出码）。可靠路径：让 CLI 下载完安装器后，把 TuanjieSetup64-<ver>.exe 挪到 D 盘，用 Start-Process -Verb RunAs -Wait -PassThru 手动执行 `/S /D=<安装目录>` 静默安装，完成后 list-installed 能自动识别。
+- [2026-10-15 18:57:07] 本机 run_shell_command 用的是 PowerShell 5.1：`Start-Process -ArgumentList` 各项**不会自动加引号**，含空格/全角字符的路径会被编辑器截断（-projectPath 实际只收到 "D:\Genesisi"），表现为 batchmode 秒退退出码 1 且 -logFile 指定日志不存在。正确写法：拼一个单字符串内嵌双引号传给 -ArgumentList，如 `$argline = '-batchmode -quit -projectPath "' + $proj + '" -executeMethod X.Y.Z -logFile "D:\Tuanjie\gv.log"'; Start-Process $editor -ArgumentList $argline -Wait -PassThru`。勿用数组逐项传含空格路径（5.1 无引号，pwsh 7.3+ 才自动加）。
 
 ### Project
-- [2026-10-15 03:37:18] 2026-10-15：GenesisValley 工程锁定团结引擎 1.10.4（内部版本 2022.3.62t16），编辑器装于 D:\Tuanjie\Editor\2022.3.62t16。工程目录 GenesisValley/ 已用 3D(URP) 空白模板（cn.tuanjie.template.urp-blank, URP 14.2.0-t1）创建并注册 Hub；ProjectVersion.txt=2022.3.62t16/1.10.4，含 packages-lock.json。注意：`tuanjie.exe projects create` 完成后会自动启动编辑器 GUI 打开新工程并持有工程锁（Temp/TuanjieLockfile），此时再跑 batchmode 会因锁冲突退出码 1——验证需等 GUI 导入完成或先关编辑器。
+- [2026-10-15 18:56:55] 2026-10-15：GenesisValley 工程锁定团结引擎 1.10.4（2022.3.62t16），编辑器装于 D:\Tuanjie\Editor\2022.3.62t16。仓库与工程于当日重组进 Genesisi-valley-unity-/ 子目录（独立 git）。v0.9.0 单机版已交付并完成一键配置+首次导入，commit 0819971 提交全部生成 .meta 固定引用。另注意：`tuanjie.exe projects create` 会自动启动编辑器 GUI 并持有 Temp/TuanjieLockfile——GUI 开着时 batchmode 确实抢不到锁，但 2026-10-15 晨 batchmode 失败的主因是 PowerShell 5.1 的 -ArgumentList 不自动加引号（见 Feedback）。
+
 
 
 ### Reference
