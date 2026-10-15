@@ -93,7 +93,6 @@
 
 ### Project
 - [2026-10-15 18:56:55] 2026-10-15：GenesisValley 工程锁定团结引擎 1.10.4（2022.3.62t16），编辑器装于 D:\Tuanjie\Editor\2022.3.62t16。仓库与工程于当日重组进 Genesisi-valley-unity-/ 子目录（独立 git）。v0.9.0 单机版已交付并完成一键配置+首次导入，commit 0819971 提交全部生成 .meta 固定引用。另注意：`tuanjie.exe projects create` 会自动启动编辑器 GUI 并持有 Temp/TuanjieLockfile——GUI 开着时 batchmode 确实抢不到锁，但 2026-10-15 晨 batchmode 失败的主因是 PowerShell 5.1 的 -ArgumentList 不自动加引号（见 Feedback）。
-
-
+- [2026-10-15 22:25:45] 2026-10-15：Genesisi-valley-unity- 仓库的 GitHub 直连会被重置（Connection was reset），必须走本机代理 127.0.0.1:7897（Clash 类混合端口）。该代理已写入仓库级 git 配置（http.proxy/https.proxy），今后在此仓库直接 git fetch/pull/push 即可；若用户关闭代理，git 远程操作会失败。远端：https://github.com/3311930677/Genesisi-valley-unity-.git（main 分支）。
 
 ### Reference
