@@ -13,7 +13,7 @@ namespace GenesisValley.EditorTools
     /// </summary>
     public sealed class GVAssetPostprocessor : AssetPostprocessor
     {
-        private const uint Version = 4;
+        private const uint Version = 5;
         public override uint GetVersion() => Version;
 
         private static bool IsOurs(string p) => GVPaths.Under(p, GVPaths.ThirdParty) || GVPaths.Under(p, GVPaths.Art);
@@ -97,7 +97,8 @@ namespace GenesisValley.EditorTools
                 c.lockRootRotation = true;
                 c.lockRootHeightY = true;
                 c.lockRootPositionXZ = true;
-                c.keepOriginalOrientation = true;
+                // Body orientation (not the file's original root): clips always face +Z, so villagers never walk backwards.
+                c.keepOriginalOrientation = false;
                 c.keepOriginalPositionY = true;
                 c.keepOriginalPositionXZ = true;
                 c.heightFromFeet = false;

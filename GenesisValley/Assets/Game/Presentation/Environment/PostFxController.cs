@@ -62,6 +62,10 @@ namespace GenesisValley.Presentation
             _dof.aperture.Override(9f);
             _dof.focalLength.Override(60f);
             _dof.bladeCount.Override(6);
+            _dof.gaussianStart.Override(80f);
+            _dof.gaussianEnd.Override(300f);
+            _dof.gaussianMaxRadius.Override(0.6f);
+            _dof.highQualitySampling.Override(true);
 
             var go = new GameObject("PostVolume");
             go.transform.SetParent(transform, false);
@@ -113,9 +117,21 @@ namespace GenesisValley.Presentation
                 _dof.focusDistance.value = Mathf.Max(1f, d);
                 // Stronger miniature feel up close, almost none when looking over the whole valley.
                 float k = Mathf.InverseLerp(260f, 25f, d);
-                if (PhotoMode) k = Mathf.Clamp01(PhotoBlur * 1.25f);
-                _dof.aperture.value = Mathf.Lerp(16f, 5.6f, k);
-                _dof.focalLength.value = Mathf.Lerp(28f, 85f, k);
+                if (PhotoMode)
+                {
+                    k = Mathf.Clamp01(PhotoBlur * 1.25f);
+                    _dof.mode.value = DepthOfFieldMode.Bokeh;
+                    _dof.aperture.value = Mathf.Lerp(16f, 5.6f, k);
+                    _dof.focalLength.value = Mathf.Lerp(28f, 85f, k);
+                }
+                else
+                {
+                    // Gameplay: far-only Gaussian blur, so the focus area and everything nearer stay crisp.
+                    _dof.mode.value = DepthOfFieldMode.Gaussian;
+                    _dof.gaussianStart.value = d * 1.8f;
+                    _dof.gaussianEnd.value = d * 5f;
+                    _dof.gaussianMaxRadius.value = Mathf.Lerp(0.35f, 0.8f, k);
+                }
             }
         }
 

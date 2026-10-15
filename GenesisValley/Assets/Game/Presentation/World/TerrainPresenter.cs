@@ -237,7 +237,7 @@ namespace GenesisValley.Presentation
                 UploadHeightsAll();
                 RebuildTreeDensity(true);
                 for (int t = 0; t < TilesPerSide * TilesPerSide; t++) Enqueue(t);
-                GameServices.Presenter?.OnTerrainChanged(new Rect(0, 0, _w.Config.WorldSize, _w.Config.WorldSize));
+                GameServices.Presenter?.OnTerrainRegionChanged(new Rect(0, 0, _w.Config.WorldSize, _w.Config.WorldSize));
             }
             else if (!_w.PresentationHeightDirty.IsEmpty)
             {
@@ -247,7 +247,7 @@ namespace GenesisValley.Presentation
                 _strokeDirty = _strokeDirty.Union(r);
                 if (!Stroking) FinishStroke();
                 float sp = _w.Height.Spacing;
-                GameServices.Presenter?.OnTerrainChanged(Rect.MinMaxRect(r.XMin * sp - 2, r.ZMin * sp - 2, r.XMax * sp + 2, r.ZMax * sp + 2));
+                GameServices.Presenter?.OnTerrainRegionChanged(Rect.MinMaxRect(r.XMin * sp - 2, r.ZMin * sp - 2, r.XMax * sp + 2, r.ZMax * sp + 2));
             }
 
             float now = Time.unscaledTime;

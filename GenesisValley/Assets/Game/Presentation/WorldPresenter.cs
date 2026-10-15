@@ -85,7 +85,7 @@ namespace GenesisValley.Presentation
         }
 
         /// <summary>Called by <see cref="TerrainPresenter"/> after heights were uploaded for a world-space rectangle.</summary>
-        public void OnTerrainChanged(Rect r)
+        public void OnTerrainRegionChanged(Rect r)
         {
             if (World == null) return;
             Trees.Resnap(r);
