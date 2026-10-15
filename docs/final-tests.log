@@ -1,0 +1,8 @@
+  SimTest -> /data/simtest/bin/Debug/net8.0/SimTest.dll
+Test run for /data/simtest/bin/Debug/net8.0/SimTest.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    19, Skipped:     0, Total:    19, Duration: 14 s - SimTest.dll (net8.0)
