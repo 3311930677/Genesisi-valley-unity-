@@ -1,0 +1,963 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 480abc9541176d148ae49a885e811dbd, type: 3}
+  m_Name: GV_ArtCatalog
+  m_EditorClassIdentifier: 
+  models:
+  - key: Balcony_Cross_Corner
+    prefab: {fileID: 919132149155446097, guid: 9caf9a1c756a8374bbf851bb62b9d998, type: 3}
+  - key: Balcony_Cross_Straight
+    prefab: {fileID: 919132149155446097, guid: e4cc961d6e4d22843ba119224f41ee1b, type: 3}
+  - key: Balcony_Simple_Corner
+    prefab: {fileID: 919132149155446097, guid: d8bfd047682007e41b2ee1b283d6c5c9, type: 3}
+  - key: Balcony_Simple_Straight
+    prefab: {fileID: 919132149155446097, guid: dc140755496f97349883abeccc93aaab, type: 3}
+  - key: Corner_ExteriorWide_Brick
+    prefab: {fileID: 919132149155446097, guid: 49bc80bf1126f314cbc6de720f035145, type: 3}
+  - key: Corner_ExteriorWide_Wood
+    prefab: {fileID: 919132149155446097, guid: 82a28caf774c48e41bde395d9610da9f, type: 3}
+  - key: Corner_Exterior_Brick
+    prefab: {fileID: 919132149155446097, guid: 4e97cdf4a8735dc42b4340c25caf0634, type: 3}
+  - key: Corner_Exterior_TopDown
+    prefab: {fileID: 919132149155446097, guid: eb692670a3389134eb5feac04276c6bb, type: 3}
+  - key: Corner_Exterior_TopOnly
+    prefab: {fileID: 919132149155446097, guid: 1688a9444f07f9a49b9b52dd0365f8a0, type: 3}
+  - key: Corner_Exterior_Wood
+    prefab: {fileID: 919132149155446097, guid: 26019adf89cb93947b4ae39570027ed4, type: 3}
+  - key: Corner_Interior_Big
+    prefab: {fileID: 919132149155446097, guid: 1baa41b0d8f81ad48a1475333dc23e84, type: 3}
+  - key: Corner_Interior_Small
+    prefab: {fileID: 919132149155446097, guid: d73a9e41ed98b974f9c4eae9274ebe05, type: 3}
+  - key: DoorFrame_Flat_Brick
+    prefab: {fileID: 919132149155446097, guid: bbc08835b6eca0546b4b8239edf78783, type: 3}
+  - key: DoorFrame_Flat_WoodDark
+    prefab: {fileID: 919132149155446097, guid: ac988f938773d7048a4feef97f49df3b, type: 3}
+  - key: DoorFrame_Round_Brick
+    prefab: {fileID: 919132149155446097, guid: 64f4a5efdcf79154c968834805bfe886, type: 3}
+  - key: DoorFrame_Round_WoodDark
+    prefab: {fileID: 919132149155446097, guid: 194c262e5dee5214da152761dae5e6f3, type: 3}
+  - key: Door_1_Flat
+    prefab: {fileID: 919132149155446097, guid: 0840ee8b3b8ae5a4692bd19dc301623a, type: 3}
+  - key: Door_1_Round
+    prefab: {fileID: 919132149155446097, guid: 12096b07c1d3f2d41a42dd2e5f2f2518, type: 3}
+  - key: Door_2_Flat
+    prefab: {fileID: 919132149155446097, guid: b7be83d7390fed6478891881d13f3522, type: 3}
+  - key: Door_2_Round
+    prefab: {fileID: 919132149155446097, guid: d6c035b3c2bf42a4fa11cf80b97d4499, type: 3}
+  - key: Door_4_Flat
+    prefab: {fileID: 919132149155446097, guid: e67fb23fc55e5af4eaa9ad7c429144cf, type: 3}
+  - key: Door_4_Round
+    prefab: {fileID: 919132149155446097, guid: cf1dda9f50f1be04299452de850ef1be, type: 3}
+  - key: Door_8_Flat
+    prefab: {fileID: 919132149155446097, guid: 98b8b3e0e1be88641b611a448189794b, type: 3}
+  - key: Door_8_Round
+    prefab: {fileID: 919132149155446097, guid: 369a4aabb80bd754d8e9bbe8682ae2b3, type: 3}
+  - key: Floor_Brick
+    prefab: {fileID: 919132149155446097, guid: ee889a865c1c6754fa8c2d917876e4d3, type: 3}
+  - key: Floor_RedBrick
+    prefab: {fileID: 919132149155446097, guid: 7fa4abf36620d164fa6c4e036ce1d63e, type: 3}
+  - key: Floor_UnevenBrick
+    prefab: {fileID: 919132149155446097, guid: c5f5ae76300f51c42a3b2fa686c92a3e, type: 3}
+  - key: Floor_WoodDark
+    prefab: {fileID: 919132149155446097, guid: 993be975c1b60b84cac5248b34abf684, type: 3}
+  - key: Floor_WoodDark_Half1
+    prefab: {fileID: 919132149155446097, guid: 98ce020a2a6645c4b983ef4e1a7dc875, type: 3}
+  - key: Floor_WoodDark_Half2
+    prefab: {fileID: 919132149155446097, guid: adb6261e3bc574c4d8034f5f9c207e5c, type: 3}
+  - key: Floor_WoodDark_Half3
+    prefab: {fileID: 919132149155446097, guid: cd5f9309d26bafa4f946dc7439e6b4f6, type: 3}
+  - key: Floor_WoodDark_OverhangCorner
+    prefab: {fileID: 919132149155446097, guid: 4096f61fc1d758e45a9337e3fc511c85, type: 3}
+  - key: Floor_WoodDark_OverhangCorner2
+    prefab: {fileID: 919132149155446097, guid: 6721a7777833eee4eb30092849a6e00b, type: 3}
+  - key: Floor_WoodLight
+    prefab: {fileID: 919132149155446097, guid: 52935b426f081034cb86308053989848, type: 3}
+  - key: Floor_WoodLight_OverhangCorner
+    prefab: {fileID: 919132149155446097, guid: be864d4a9e6a6fe4890112400e4e585a, type: 3}
+  - key: Floor_WoodLight_OverhangCorner2
+    prefab: {fileID: 919132149155446097, guid: 81b2ac4cd37d4504495deeb55a09d9f8, type: 3}
+  - key: HoleCover_90Angle
+    prefab: {fileID: 919132149155446097, guid: 70a036929865fa845b695187808c8aa3, type: 3}
+  - key: HoleCover_90Half
+    prefab: {fileID: 919132149155446097, guid: da3567a12189a294aae35b894befdc84, type: 3}
+  - key: HoleCover_90Stairs
+    prefab: {fileID: 919132149155446097, guid: 20467ad4967f39d41acc7825f857a6c0, type: 3}
+  - key: HoleCover_Straight
+    prefab: {fileID: 919132149155446097, guid: 349e0790a829e5f40aea21b8f40781f3, type: 3}
+  - key: HoleCover_StraightHalf
+    prefab: {fileID: 919132149155446097, guid: 71140254e65e314499eae517eb04a551, type: 3}
+  - key: Overhang_Plaster_Corner
+    prefab: {fileID: 919132149155446097, guid: 9884431546b664947a526492963f98ed, type: 3}
+  - key: Overhang_Plaster_Corner_Front
+    prefab: {fileID: 919132149155446097, guid: 57822119649008549a485176e13b9551, type: 3}
+  - key: Overhang_Plaster_Long
+    prefab: {fileID: 919132149155446097, guid: 62aff25ad30aabc4b8bcec8ea8c68aec, type: 3}
+  - key: Overhang_Plaster_Short
+    prefab: {fileID: 919132149155446097, guid: 8c62355f0537df94cb2047972cedce1e, type: 3}
+  - key: Overhang_RoofIncline_Plaster
+    prefab: {fileID: 919132149155446097, guid: a9632cfae8b2eac4eb8a50ea9fd56752, type: 3}
+  - key: Overhang_RoofIncline_UnevenBricks
+    prefab: {fileID: 919132149155446097, guid: 5c7b59e5b7f09c14793912c815de00a4, type: 3}
+  - key: Overhang_Roof_Plaster
+    prefab: {fileID: 919132149155446097, guid: 75d6984377ce6a5469150ba65b48cc5f, type: 3}
+  - key: Overhang_Roof_UnevenBricks
+    prefab: {fileID: 919132149155446097, guid: da986064230b62645b05f116c493724d, type: 3}
+  - key: Overhang_Side_Plaster_Long_L
+    prefab: {fileID: 919132149155446097, guid: 2e97d71ae086e7546830ce72d365e35b, type: 3}
+  - key: Overhang_Side_Plaster_Long_R
+    prefab: {fileID: 919132149155446097, guid: f4a9516d9c73c8643b92875567b63955, type: 3}
+  - key: Overhang_Side_Plaster_Short_L
+    prefab: {fileID: 919132149155446097, guid: 7306f376eaa4bfe40bc9a995e94456ad, type: 3}
+  - key: Overhang_Side_Plaster_Short_R
+    prefab: {fileID: 919132149155446097, guid: 28afa30e15a68d642aa1ff53eb0a3927, type: 3}
+  - key: Overhang_Side_UnevenBrick_Long_L
+    prefab: {fileID: 919132149155446097, guid: 25c741305f75d04419cc6f6cd13a6d7f, type: 3}
+  - key: Overhang_Side_UnevenBrick_Long_R
+    prefab: {fileID: 919132149155446097, guid: 5a4c0a7ebadd63940a8a049043ac462e, type: 3}
+  - key: Overhang_Side_UnevenBrick_Short_L
+    prefab: {fileID: 919132149155446097, guid: 396ae08747d599d4381611916ff06bc6, type: 3}
+  - key: Overhang_Side_UnevenBrick_Short_R
+    prefab: {fileID: 919132149155446097, guid: 78cd655c526202a4e82989280bf5c888, type: 3}
+  - key: Overhang_UnevenBrick_Corner
+    prefab: {fileID: 919132149155446097, guid: 62fa6daab5799ef4493ed9e6cbb4d8ab, type: 3}
+  - key: Overhang_UnevenBrick_Corner_Front
+    prefab: {fileID: 919132149155446097, guid: 57fa20dac9617444d9a18cd2bb9844d4, type: 3}
+  - key: Overhang_UnevenBrick_Long
+    prefab: {fileID: 919132149155446097, guid: aaf89601b61c6ad49a0fc47c763f11dc, type: 3}
+  - key: Overhang_UnevenBrick_Short
+    prefab: {fileID: 919132149155446097, guid: 2c410c08940645943af4993c72294891, type: 3}
+  - key: Prop_Brick1
+    prefab: {fileID: 919132149155446097, guid: 413df855e9b992240931e7e067e6f5e6, type: 3}
+  - key: Prop_Brick2
+    prefab: {fileID: 919132149155446097, guid: f99b2692dd2283a489a9fff5822f161c, type: 3}
+  - key: Prop_Brick3
+    prefab: {fileID: 919132149155446097, guid: 79da76b4c718ca34bb03721728532e85, type: 3}
+  - key: Prop_Brick4
+    prefab: {fileID: 919132149155446097, guid: 2168262e46a71064688d262c9795d389, type: 3}
+  - key: Prop_Chimney
+    prefab: {fileID: 919132149155446097, guid: 5665d914bb723344e807a6b07a7aa192, type: 3}
+  - key: Prop_Chimney2
+    prefab: {fileID: 919132149155446097, guid: 2a8e6d9453c5b6f4eb9d816c70496c79, type: 3}
+  - key: Prop_Crate
+    prefab: {fileID: 919132149155446097, guid: a2189e83e44d1e041a0cd8b0d3a16c27, type: 3}
+  - key: Prop_ExteriorBorder_Corner
+    prefab: {fileID: 919132149155446097, guid: 7ad61c77702531c4da99226014ace905, type: 3}
+  - key: Prop_ExteriorBorder_Straight1
+    prefab: {fileID: 919132149155446097, guid: e6a9ef308acc0104da8a9aa99d612ea6, type: 3}
+  - key: Prop_ExteriorBorder_Straight2
+    prefab: {fileID: 919132149155446097, guid: eb40e5b36fcf0d746ad8d36a3432da33, type: 3}
+  - key: Prop_MetalFence_Ornament
+    prefab: {fileID: 919132149155446097, guid: d94e023b6b1b4b640a87ee66cca57207, type: 3}
+  - key: Prop_MetalFence_Simple
+    prefab: {fileID: 919132149155446097, guid: 676e23d950b13b34a8516377010fa2b3, type: 3}
+  - key: Prop_Support
+    prefab: {fileID: 919132149155446097, guid: 58b58633706789b449f6c5ce58ab8338, type: 3}
+  - key: Prop_Vine1
+    prefab: {fileID: 919132149155446097, guid: 486f85ba98bd81944965172dfdc39b28, type: 3}
+  - key: Prop_Vine2
+    prefab: {fileID: 919132149155446097, guid: 5b2eb753073bd164fad25f27c2b81c5a, type: 3}
+  - key: Prop_Vine4
+    prefab: {fileID: 919132149155446097, guid: 39b747b8f75f0d94e8f8ba0714036a8f, type: 3}
+  - key: Prop_Vine5
+    prefab: {fileID: 919132149155446097, guid: 9c514d9a692788b4789841c38c72b5e6, type: 3}
+  - key: Prop_Vine6
+    prefab: {fileID: 919132149155446097, guid: a9fe2ecac0d89bd429b76fd9624008cd, type: 3}
+  - key: Prop_Vine9
+    prefab: {fileID: 919132149155446097, guid: 98f53e09d6d2ebf41b06c253fd36a88f, type: 3}
+  - key: Prop_Wagon
+    prefab: {fileID: 919132149155446097, guid: f29f856ab041ec44189bc95242686730, type: 3}
+  - key: Prop_WoodenFence_Extension1
+    prefab: {fileID: 919132149155446097, guid: a147368139b29cf438c82fd646d03036, type: 3}
+  - key: Prop_WoodenFence_Extension2
+    prefab: {fileID: 919132149155446097, guid: 5c063d64ae467004d87ae503672d749e, type: 3}
+  - key: Prop_WoodenFence_Single
+    prefab: {fileID: 919132149155446097, guid: 532270f22493aa94780243e6d175bb71, type: 3}
+  - key: Roof_2x4_RoundTile
+    prefab: {fileID: 919132149155446097, guid: 9fff9daa9e5c1214f83fe01fc887d6b9, type: 3}
+  - key: Roof_Dormer_RoundTile
+    prefab: {fileID: 919132149155446097, guid: 9fd4acdafa0a1a542a1d9eba24ecc771, type: 3}
+  - key: Roof_FrontSupports
+    prefab: {fileID: 919132149155446097, guid: 6992ac7fc971556418bd9c5c4b1bcf98, type: 3}
+  - key: Roof_Front_Brick2
+    prefab: {fileID: 919132149155446097, guid: e0bbbdca262613649ad4c27200332c43, type: 3}
+  - key: Roof_Front_Brick4
+    prefab: {fileID: 919132149155446097, guid: 9d349d2c65ef2a245a57c0015e348338, type: 3}
+  - key: Roof_Front_Brick4_Half_L
+    prefab: {fileID: 919132149155446097, guid: fb15a0e9ef54a3f45adb646b857fc4a8, type: 3}
+  - key: Roof_Front_Brick4_Half_R
+    prefab: {fileID: 919132149155446097, guid: 85df0953358e62143a0f338b5492e7c7, type: 3}
+  - key: Roof_Front_Brick6
+    prefab: {fileID: 919132149155446097, guid: 156df94cd32fee947bf2294935a663e8, type: 3}
+  - key: Roof_Front_Brick6_Half_L
+    prefab: {fileID: 919132149155446097, guid: 6d37e9372d4919c468b555052ccb3e05, type: 3}
+  - key: Roof_Front_Brick6_Half_R
+    prefab: {fileID: 919132149155446097, guid: a67d784ada639854a9faea9ba5565e2d, type: 3}
+  - key: Roof_Front_Brick8
+    prefab: {fileID: 919132149155446097, guid: 64b7b853ba8d72d47a4113ad7d979e61, type: 3}
+  - key: Roof_Front_Brick8_Half_L
+    prefab: {fileID: 919132149155446097, guid: 725ff54296048814595e65aea94e8dca, type: 3}
+  - key: Roof_Front_Brick8_Half_R
+    prefab: {fileID: 919132149155446097, guid: 12189d664079a094ebcd7102acedb32f, type: 3}
+  - key: Roof_Log
+    prefab: {fileID: 919132149155446097, guid: 54af925a02407394c9d740e9bb7947c1, type: 3}
+  - key: Roof_Modular_RoundTiles
+    prefab: {fileID: 919132149155446097, guid: 357fa253b352b394ca4faf864c9f36b9, type: 3}
+  - key: Roof_RoundTile_2x1
+    prefab: {fileID: 919132149155446097, guid: d3d8ed3fdb29b6f4aabaa979405bf99b, type: 3}
+  - key: Roof_RoundTile_2x1_Long
+    prefab: {fileID: 919132149155446097, guid: f8a745c6300856b4db82c217d027e372, type: 3}
+  - key: Roof_RoundTiles_4x4
+    prefab: {fileID: 919132149155446097, guid: 30d09f41d200fff439981cea2abf6063, type: 3}
+  - key: Roof_RoundTiles_4x6
+    prefab: {fileID: 919132149155446097, guid: db403cb6c3c39d241845e34b7131a294, type: 3}
+  - key: Roof_RoundTiles_4x8
+    prefab: {fileID: 919132149155446097, guid: 93e183ee434cbd345800d9efb6a3aef5, type: 3}
+  - key: Roof_RoundTiles_6x10
+    prefab: {fileID: 919132149155446097, guid: b832dda3da0613f4dbe542ce0d12dea5, type: 3}
+  - key: Roof_RoundTiles_6x12
+    prefab: {fileID: 919132149155446097, guid: 451f2ebdf3dc8994cac73375dabf545b, type: 3}
+  - key: Roof_RoundTiles_6x14
+    prefab: {fileID: 919132149155446097, guid: e6c3889369c59ed4197c084bac229b52, type: 3}
+  - key: Roof_RoundTiles_6x4
+    prefab: {fileID: 919132149155446097, guid: d2807902ae77c914dad23f23efcfbb8b, type: 3}
+  - key: Roof_RoundTiles_6x6
+    prefab: {fileID: 919132149155446097, guid: 48e9e20444840354d8143fc71e012e93, type: 3}
+  - key: Roof_RoundTiles_6x8
+    prefab: {fileID: 919132149155446097, guid: 029de3bb0e9479b44a838ec95854c519, type: 3}
+  - key: Roof_RoundTiles_8x10
+    prefab: {fileID: 919132149155446097, guid: 73ebee34d76066d41a649e6357eb37c0, type: 3}
+  - key: Roof_RoundTiles_8x12
+    prefab: {fileID: 919132149155446097, guid: 0990b9e0787daf84a8153c45a78f1b2c, type: 3}
+  - key: Roof_RoundTiles_8x14
+    prefab: {fileID: 919132149155446097, guid: 920b4044c51e45145a18282c49e57b12, type: 3}
+  - key: Roof_RoundTiles_8x8
+    prefab: {fileID: 919132149155446097, guid: 606f580b006f3ec45b9506781750700e, type: 3}
+  - key: Roof_Support2
+    prefab: {fileID: 919132149155446097, guid: dbe2b7994fa7a6d4a9b10a2f33a43313, type: 3}
+  - key: Roof_Tower_RoundTiles
+    prefab: {fileID: 919132149155446097, guid: aaa56ad00cdcaa2449459904ab316e58, type: 3}
+  - key: Roof_Wooden_2x1
+    prefab: {fileID: 919132149155446097, guid: 35c28f89f5af87248b975ac3e77c8b94, type: 3}
+  - key: Roof_Wooden_2x1_Center
+    prefab: {fileID: 919132149155446097, guid: 1d268abf83e121f46aef3374bc0da9dc, type: 3}
+  - key: Roof_Wooden_2x1_Center_Mirror
+    prefab: {fileID: 919132149155446097, guid: d2b304e2e974c554ea7b35c0cc738d56, type: 3}
+  - key: Roof_Wooden_2x1_Corner
+    prefab: {fileID: 919132149155446097, guid: 42fb95f2049417b438a37759f616f3be, type: 3}
+  - key: Roof_Wooden_2x1_L
+    prefab: {fileID: 919132149155446097, guid: 6657462fa6cb5b54f88ffedab44f605e, type: 3}
+  - key: Roof_Wooden_2x1_Middle
+    prefab: {fileID: 919132149155446097, guid: 88eae959b185ba74ea71f2e6451a3896, type: 3}
+  - key: Roof_Wooden_2x1_R
+    prefab: {fileID: 919132149155446097, guid: f31dcee01f4db364289b7ae97e6c80eb, type: 3}
+  - key: Stair_Interior_Rails
+    prefab: {fileID: 919132149155446097, guid: 8de265839cd7c334fa2d0f82849c5a2c, type: 3}
+  - key: Stair_Interior_Simple
+    prefab: {fileID: 919132149155446097, guid: eb07b29a704a51346b8629fed34d7e46, type: 3}
+  - key: Stair_Interior_Solid
+    prefab: {fileID: 919132149155446097, guid: 5d25cc8856ee9964eba920e3ef744fff, type: 3}
+  - key: Stair_Interior_SolidExtended
+    prefab: {fileID: 919132149155446097, guid: 556aa23bf0725da4797957b5e2a0cbd8, type: 3}
+  - key: Stairs_Exterior_NoFirstStep
+    prefab: {fileID: 919132149155446097, guid: 9cedde35f961a4d48849863141c8aa06, type: 3}
+  - key: Stairs_Exterior_Platform
+    prefab: {fileID: 919132149155446097, guid: d12f53ca31200c3428fd7ec775664d56, type: 3}
+  - key: Stairs_Exterior_Platform45
+    prefab: {fileID: 919132149155446097, guid: 3ceca3bc90f13634eb5c6a2fd6ffebba, type: 3}
+  - key: Stairs_Exterior_Platform45Clean
+    prefab: {fileID: 919132149155446097, guid: e9efe174a66099b40b59a839d1b00b94, type: 3}
+  - key: Stairs_Exterior_PlatformU
+    prefab: {fileID: 919132149155446097, guid: 2b04a6b5f0aebef4795e59edf653acf2, type: 3}
+  - key: Stairs_Exterior_SidePlatform
+    prefab: {fileID: 919132149155446097, guid: ba498c273f863644fb377d6b5b9f5a8c, type: 3}
+  - key: Stairs_Exterior_Sides
+    prefab: {fileID: 919132149155446097, guid: e35ceb852c20ede4e856f6d390378821, type: 3}
+  - key: Stairs_Exterior_Sides45
+    prefab: {fileID: 919132149155446097, guid: 61d327e1a269682479f2e61a4d6462d2, type: 3}
+  - key: Stairs_Exterior_SidesU
+    prefab: {fileID: 919132149155446097, guid: b15fb14ea658ccb4e96e75f348d2858f, type: 3}
+  - key: Stairs_Exterior_SingleSide
+    prefab: {fileID: 919132149155446097, guid: c850446d5ab6ba04cbaead36c7f4336e, type: 3}
+  - key: Stairs_Exterior_SingleSideThick
+    prefab: {fileID: 919132149155446097, guid: 24a9c276a12d4a14cbc023a1e705fb47, type: 3}
+  - key: Stairs_Exterior_Straight
+    prefab: {fileID: 919132149155446097, guid: 70958c318e0c73245a182d572748bc07, type: 3}
+  - key: Stairs_Exterior_Straight_Center
+    prefab: {fileID: 919132149155446097, guid: 03b316987e9497841b350d81ce0bd2f7, type: 3}
+  - key: Stairs_Exterior_Straight_L
+    prefab: {fileID: 919132149155446097, guid: 919e6a58f10b7264fbb4c873f2425863, type: 3}
+  - key: Stairs_Exterior_Straight_R
+    prefab: {fileID: 919132149155446097, guid: 5ece68e036563f842b48df0ecdd17f95, type: 3}
+  - key: Wall_Arch
+    prefab: {fileID: 919132149155446097, guid: 85816a5bdfd26b141b6e43e46c3feeb1, type: 3}
+  - key: Wall_BottomCover
+    prefab: {fileID: 919132149155446097, guid: eb914bdfb5052f64ca2c6a23c06f0540, type: 3}
+  - key: Wall_Plaster_Door_Flat
+    prefab: {fileID: 919132149155446097, guid: 9a9465f6b79e859408a57d57b79990d0, type: 3}
+  - key: Wall_Plaster_Door_Round
+    prefab: {fileID: 919132149155446097, guid: ca3d2180f25f3444983dc0d0b7f2476c, type: 3}
+  - key: Wall_Plaster_Door_RoundInset
+    prefab: {fileID: 919132149155446097, guid: 8dfbecc3ef2725740b166d27fa23abba, type: 3}
+  - key: Wall_Plaster_Straight
+    prefab: {fileID: 919132149155446097, guid: e6e946ca85c3b6f47b9bc5abbf4fc832, type: 3}
+  - key: Wall_Plaster_Straight_Base
+    prefab: {fileID: 919132149155446097, guid: 84cbafcfe44970b4a9f50e34cb99a127, type: 3}
+  - key: Wall_Plaster_Straight_L
+    prefab: {fileID: 919132149155446097, guid: 63a15705b11b16242b11fff50594385d, type: 3}
+  - key: Wall_Plaster_Straight_R
+    prefab: {fileID: 919132149155446097, guid: 96c5dcf09f4a20d4cbda86af18c24aef, type: 3}
+  - key: Wall_Plaster_Window_Thin_Round
+    prefab: {fileID: 919132149155446097, guid: 3b040047f1293164497341c39fcb8a3d, type: 3}
+  - key: Wall_Plaster_Window_Wide_Flat
+    prefab: {fileID: 919132149155446097, guid: ac31fb6f004720c489ee64ec921ce167, type: 3}
+  - key: Wall_Plaster_Window_Wide_Flat2
+    prefab: {fileID: 919132149155446097, guid: bd2d51f2556d8824e9d6cb50c7723280, type: 3}
+  - key: Wall_Plaster_Window_Wide_Round
+    prefab: {fileID: 919132149155446097, guid: 70b959fda5309214d881674e9200cfdd, type: 3}
+  - key: Wall_Plaster_WoodGrid
+    prefab: {fileID: 919132149155446097, guid: aa6c4cd774b93e34cb97c706ecb0c283, type: 3}
+  - key: Wall_UnevenBrick_Door_Flat
+    prefab: {fileID: 919132149155446097, guid: 71811dcb5221bb1459b52d2edd62b87a, type: 3}
+  - key: Wall_UnevenBrick_Door_Round
+    prefab: {fileID: 919132149155446097, guid: 72b82e30258510742ad4593806ea8fdf, type: 3}
+  - key: Wall_UnevenBrick_Straight
+    prefab: {fileID: 919132149155446097, guid: ccfee41f25bfa874b87b5586b584c629, type: 3}
+  - key: Wall_UnevenBrick_Window_Thin_Round
+    prefab: {fileID: 919132149155446097, guid: a30f93f03fa59114e93bd64c6ba3b8be, type: 3}
+  - key: Wall_UnevenBrick_Window_Wide_Flat
+    prefab: {fileID: 919132149155446097, guid: 1ca5a2666fb40b946a8d5364d5a64755, type: 3}
+  - key: Wall_UnevenBrick_Window_Wide_Round
+    prefab: {fileID: 919132149155446097, guid: 20db95a7d8dc6294896c6c3f8e2c8f2b, type: 3}
+  - key: WindowShutters_Thin_Flat_Closed
+    prefab: {fileID: 919132149155446097, guid: e8b98e91db6d21b4788df371c0830da9, type: 3}
+  - key: WindowShutters_Thin_Flat_Open
+    prefab: {fileID: 919132149155446097, guid: 0e0c44f03c1dba742ae6804b228ee033, type: 3}
+  - key: WindowShutters_Thin_Round_Closed
+    prefab: {fileID: 919132149155446097, guid: b7ee1b1263b523d44bc6ac09252acea1, type: 3}
+  - key: WindowShutters_Thin_Round_Open
+    prefab: {fileID: 919132149155446097, guid: f3b3ce9056752c749823eb53120a8dcb, type: 3}
+  - key: WindowShutters_Wide_Flat_Closed
+    prefab: {fileID: 919132149155446097, guid: f117b7b6d5fb59b43bfe1a5b903d82ca, type: 3}
+  - key: WindowShutters_Wide_Flat_Open
+    prefab: {fileID: 919132149155446097, guid: 917ff50b70e7751458b96e1e51f99d73, type: 3}
+  - key: WindowShutters_Wide_Round_Closed
+    prefab: {fileID: 919132149155446097, guid: d6dc6d0c1b7e23a44aae0101469091a9, type: 3}
+  - key: WindowShutters_Wide_Round_Open
+    prefab: {fileID: 919132149155446097, guid: 7bcd4c25ee5d70d4c8453871d99a6a6f, type: 3}
+  - key: Window_Roof_Thin
+    prefab: {fileID: 919132149155446097, guid: 743b6d197be22bb4d8692ea4b06a8420, type: 3}
+  - key: Window_Roof_Wide
+    prefab: {fileID: 919132149155446097, guid: 4b494e5ed5f0b5c429b612fa5280fff8, type: 3}
+  - key: Window_Thin_Flat1
+    prefab: {fileID: 919132149155446097, guid: 88a699f17b8020a4f98d58ccc21d771d, type: 3}
+  - key: Window_Thin_Round1
+    prefab: {fileID: 919132149155446097, guid: adb3f47107ba5fd489007537d3169522, type: 3}
+  - key: Window_Wide_Flat1
+    prefab: {fileID: 919132149155446097, guid: 0b773b6913dd8294698590403c6d4c2f, type: 3}
+  - key: Window_Wide_Round1
+    prefab: {fileID: 919132149155446097, guid: 01ec4cf7d104f304cbcb355335f85864, type: 3}
+  - key: Bush_Common
+    prefab: {fileID: 919132149155446097, guid: 6510f5df29a794542858f7258c8b0bb4, type: 3}
+  - key: Bush_Common_Flowers
+    prefab: {fileID: 919132149155446097, guid: 19c1713c9b6b7d04a9f4eeba946a505b, type: 3}
+  - key: Clover_1
+    prefab: {fileID: 919132149155446097, guid: 0b4030b0b5a40074398e0bcf0a45331a, type: 3}
+  - key: Clover_2
+    prefab: {fileID: 919132149155446097, guid: ae53bef82944a014a85bec0be5ba372d, type: 3}
+  - key: CommonTree_1
+    prefab: {fileID: 919132149155446097, guid: 3bb5ffd36d875ea45bf2a4344f4b64b6, type: 3}
+  - key: CommonTree_2
+    prefab: {fileID: 919132149155446097, guid: 8041153340aa479429a86c94d70a91a2, type: 3}
+  - key: CommonTree_3
+    prefab: {fileID: 919132149155446097, guid: 1715d7135d495e94e856613a41969823, type: 3}
+  - key: CommonTree_4
+    prefab: {fileID: 919132149155446097, guid: 9b694fc38bca8d248a882f5264a7d9aa, type: 3}
+  - key: CommonTree_5
+    prefab: {fileID: 919132149155446097, guid: aa77956f3e502ef4e82736d55fa22e97, type: 3}
+  - key: DeadTree_1
+    prefab: {fileID: 919132149155446097, guid: 447f6e0602c33704d9673bb5dcba4ca3, type: 3}
+  - key: DeadTree_2
+    prefab: {fileID: 919132149155446097, guid: ce1dfe1cdd873ba45b41cbc9c30ad1ae, type: 3}
+  - key: DeadTree_3
+    prefab: {fileID: 919132149155446097, guid: 8e9bb52a5832e5041b8d2f3ba564776f, type: 3}
+  - key: DeadTree_4
+    prefab: {fileID: 919132149155446097, guid: 09d1591ffe0940c4fb08561bfeaa4eb4, type: 3}
+  - key: DeadTree_5
+    prefab: {fileID: 919132149155446097, guid: d213c8d281c41d141a9ff0cbcc4e92b5, type: 3}
+  - key: Fern_1
+    prefab: {fileID: 919132149155446097, guid: f96eea6e639fa984e8da5ec3a8baeb97, type: 3}
+  - key: Flower_3_Group
+    prefab: {fileID: 919132149155446097, guid: e4c43dcbe07c23c4784159fa36b41f3a, type: 3}
+  - key: Flower_3_Single
+    prefab: {fileID: 919132149155446097, guid: dd88d702494d3904a8562330a583a40e, type: 3}
+  - key: Flower_4_Group
+    prefab: {fileID: 919132149155446097, guid: 660cf95d191a7634f87bc3d3028b337f, type: 3}
+  - key: Flower_4_Single
+    prefab: {fileID: 919132149155446097, guid: 0d7a288a34322b645b1fe29f6789a588, type: 3}
+  - key: Grass_Common_Short
+    prefab: {fileID: 919132149155446097, guid: e62826740d2d09e43839a6a6ff77f4eb, type: 3}
+  - key: Grass_Common_Tall
+    prefab: {fileID: 919132149155446097, guid: de84664764f22c9489bf42059699b65a, type: 3}
+  - key: Grass_Wispy_Short
+    prefab: {fileID: 919132149155446097, guid: 6cd8f3a01bbc5ea4ca4aa5bb6ac3b041, type: 3}
+  - key: Grass_Wispy_Tall
+    prefab: {fileID: 919132149155446097, guid: 52d1703879734414fb24514cd19b7608, type: 3}
+  - key: Mushroom_Common
+    prefab: {fileID: 919132149155446097, guid: 3760eea212073da47b4ca698f1f60de8, type: 3}
+  - key: Mushroom_Laetiporus
+    prefab: {fileID: 919132149155446097, guid: 816eaa2bb40d11b43a1f4fac4f0cfb49, type: 3}
+  - key: Pebble_Round_1
+    prefab: {fileID: 919132149155446097, guid: a4fcd34f657ddd2458a1031d5ce41776, type: 3}
+  - key: Pebble_Round_2
+    prefab: {fileID: 919132149155446097, guid: e9a50ee05cf22d243a0d5901857b8a50, type: 3}
+  - key: Pebble_Round_3
+    prefab: {fileID: 919132149155446097, guid: cd1bb5576dd057342a1624c373249cbc, type: 3}
+  - key: Pebble_Round_4
+    prefab: {fileID: 919132149155446097, guid: 594b8230ad449374c8883f0f14eecd61, type: 3}
+  - key: Pebble_Round_5
+    prefab: {fileID: 919132149155446097, guid: 5c947c6d0f26f7243a864e45d6fafae6, type: 3}
+  - key: Pebble_Square_1
+    prefab: {fileID: 919132149155446097, guid: a1c4e995dcc9f22478e6bc8a19d34d4d, type: 3}
+  - key: Pebble_Square_2
+    prefab: {fileID: 919132149155446097, guid: 2c1d0a45986c1f942820a0313972fd56, type: 3}
+  - key: Pebble_Square_3
+    prefab: {fileID: 919132149155446097, guid: b50c62f24ea7eb74eb25a5c7942ea6fa, type: 3}
+  - key: Pebble_Square_4
+    prefab: {fileID: 919132149155446097, guid: a6876a9e88c9463479b354993970bf2e, type: 3}
+  - key: Pebble_Square_5
+    prefab: {fileID: 919132149155446097, guid: fbcfd56a15031ec4d85988eb7f9c7c0c, type: 3}
+  - key: Pebble_Square_6
+    prefab: {fileID: 919132149155446097, guid: 34dcf1b9e3593c640b395fc888bcb394, type: 3}
+  - key: Petal_1
+    prefab: {fileID: 919132149155446097, guid: 188b1502b58bb1543b1ad25ab8470a21, type: 3}
+  - key: Petal_2
+    prefab: {fileID: 919132149155446097, guid: b2fed6439ac767a419ed6f3f43235a74, type: 3}
+  - key: Petal_3
+    prefab: {fileID: 919132149155446097, guid: 46a406b352f80b149a9bd49db00b6fcd, type: 3}
+  - key: Petal_4
+    prefab: {fileID: 919132149155446097, guid: 702e63279e5ea2148ab6d3ee70d864cc, type: 3}
+  - key: Petal_5
+    prefab: {fileID: 919132149155446097, guid: 91c69beb12c7a9941a473fe59d06f0ad, type: 3}
+  - key: Pine_1
+    prefab: {fileID: 919132149155446097, guid: 1c7a2f29c0ad17a499c9329a24539ce5, type: 3}
+  - key: Pine_2
+    prefab: {fileID: 919132149155446097, guid: 15697807a7d1527449be4c1f86db09cb, type: 3}
+  - key: Pine_3
+    prefab: {fileID: 919132149155446097, guid: 8cd2cce7f2c21c34c8e4ac6b65a3e250, type: 3}
+  - key: Pine_4
+    prefab: {fileID: 919132149155446097, guid: 55972340659c13c45a155570d5c06a68, type: 3}
+  - key: Pine_5
+    prefab: {fileID: 919132149155446097, guid: 086d43621734e6d4bad45570254a2268, type: 3}
+  - key: Plant_1
+    prefab: {fileID: 919132149155446097, guid: f0658e2aa96e35e4f81494c95126c699, type: 3}
+  - key: Plant_1_Big
+    prefab: {fileID: 919132149155446097, guid: 9f3e30cf25cc3384dbd88b9966597dc0, type: 3}
+  - key: Plant_7
+    prefab: {fileID: 919132149155446097, guid: 07271077e54292142870caaa5f8a88a5, type: 3}
+  - key: Plant_7_Big
+    prefab: {fileID: 919132149155446097, guid: a49e8b11d32d5a345af3715d50c10c97, type: 3}
+  - key: RockPath_Round_Small_1
+    prefab: {fileID: 919132149155446097, guid: 2905c264a27f24d49b678eba930eab38, type: 3}
+  - key: RockPath_Round_Small_2
+    prefab: {fileID: 919132149155446097, guid: 91e6721e3506cea49957dff9be1d401e, type: 3}
+  - key: RockPath_Round_Small_3
+    prefab: {fileID: 919132149155446097, guid: 43ac438c5d873b14ba2bc2d582a0cb91, type: 3}
+  - key: RockPath_Round_Thin
+    prefab: {fileID: 919132149155446097, guid: 24decf3dfaee54f41b79c7967dc95d8b, type: 3}
+  - key: RockPath_Round_Wide
+    prefab: {fileID: 919132149155446097, guid: 976511fcd26e7e246898bce1ff10ec69, type: 3}
+  - key: RockPath_Square_Small_1
+    prefab: {fileID: 919132149155446097, guid: d4e733133f882f84fae34764c6ee763e, type: 3}
+  - key: RockPath_Square_Small_2
+    prefab: {fileID: 919132149155446097, guid: 79aacecdb30a9454a851187b132bc9b5, type: 3}
+  - key: RockPath_Square_Small_3
+    prefab: {fileID: 919132149155446097, guid: 43481f6d2a99a774bafc601d1f977580, type: 3}
+  - key: RockPath_Square_Thin
+    prefab: {fileID: 919132149155446097, guid: 9a98aaaff95446342884560fbdbcace8, type: 3}
+  - key: RockPath_Square_Wide
+    prefab: {fileID: 919132149155446097, guid: c3c9f4d915404764d8d938b550ed68f4, type: 3}
+  - key: Rock_Medium_1
+    prefab: {fileID: 919132149155446097, guid: dca0a9a8d6358cf429962131263bfc9c, type: 3}
+  - key: Rock_Medium_2
+    prefab: {fileID: 919132149155446097, guid: b00599d801dfbaf4ebca8caaae0785ea, type: 3}
+  - key: Rock_Medium_3
+    prefab: {fileID: 919132149155446097, guid: dd7332c4249141b40a3aba46e5da0466, type: 3}
+  - key: TwistedTree_1
+    prefab: {fileID: 919132149155446097, guid: 4d314459882986d44a2004e095ad1ea4, type: 3}
+  - key: TwistedTree_2
+    prefab: {fileID: 919132149155446097, guid: 46d6c13151db2cb4ab014fc136525a5d, type: 3}
+  - key: TwistedTree_3
+    prefab: {fileID: 919132149155446097, guid: 5be7869398d181542aa785b565c773c6, type: 3}
+  - key: TwistedTree_4
+    prefab: {fileID: 919132149155446097, guid: d7cc41578d09c0e4bb07b472f69228b8, type: 3}
+  - key: TwistedTree_5
+    prefab: {fileID: 919132149155446097, guid: bed0bfd4cd002744b8f40d3540a10509, type: 3}
+  materials:
+  - key: Lit
+    material: {fileID: 2100000, guid: 2229e3e38187b9e449f6c29d81c000b4, type: 2}
+  - key: LitEmissive
+    material: {fileID: 2100000, guid: b6e780f994ca2614a8aff658763fbf2f, type: 2}
+  - key: Bark
+    material: {fileID: 2100000, guid: 8784c889830cd0e4db768132064ed1a2, type: 2}
+  - key: Stone
+    material: {fileID: 2100000, guid: d73daebfa8750af46b9827b2a5a1b674, type: 2}
+  - key: Soil
+    material: {fileID: 2100000, guid: 0bbc607ec7cefc7458684b9f3fd8219c, type: 2}
+  - key: Bark_DeadTree
+    material: {fileID: 2100000, guid: 1f8f09e305f9d6142b91c05130ab9551, type: 2}
+  - key: Bark_NormalTree
+    material: {fileID: 2100000, guid: 8784c889830cd0e4db768132064ed1a2, type: 2}
+  - key: Bark_TwistedTree
+    material: {fileID: 2100000, guid: 9f5876518bac5ec4a9081b2094646cad, type: 2}
+  - key: Flowers
+    material: {fileID: 2100000, guid: a50e6c7c8167c684390e6711920b48b3, type: 2}
+  - key: Grass
+    material: {fileID: 2100000, guid: 0b30a328c38d72146bae5b58fe9a89cc, type: 2}
+  - key: Leaves
+    material: {fileID: 2100000, guid: 35bdf92755ec28147bb8c99fffc24284, type: 2}
+  - key: Leaves_Bush
+    material: {fileID: 2100000, guid: e35273d5cf8e45147a9ec78e64a16f3e, type: 2}
+  - key: Leaves_NormalTree
+    material: {fileID: 2100000, guid: 6e90de2b664bb8f4688a2ab8fb762fe4, type: 2}
+  - key: Leaves_Pine
+    material: {fileID: 2100000, guid: 8d0b9cb59ec20fc4aa229a86fab0e469, type: 2}
+  - key: Leaves_TwistedTree
+    material: {fileID: 2100000, guid: a9520c9e6fbc7944c9cb01ed2393bde9, type: 2}
+  - key: MI_Brick
+    material: {fileID: 2100000, guid: 2fdaa365f6b042b48a692f7170dfb4ce, type: 2}
+  - key: MI_Eyes
+    material: {fileID: 2100000, guid: bd222c068b7a471459ff54f8573bcbc7, type: 2}
+  - key: MI_Hair_1
+    material: {fileID: 2100000, guid: 1a00bd1b2f5891d429c7b45d3064c1c9, type: 2}
+  - key: MI_Hair_2
+    material: {fileID: 2100000, guid: af42620b887a2b44386a186399139d1c, type: 2}
+  - key: MI_MetalOrnaments
+    material: {fileID: 2100000, guid: 341c2fa6292ee8e4cace2df46d188e34, type: 2}
+  - key: MI_Peasant
+    material: {fileID: 2100000, guid: 084416891a655c240bb5e0906f34eb77, type: 2}
+  - key: MI_Peasant_2
+    material: {fileID: 2100000, guid: 04354669f37a62e499895349b7322388, type: 2}
+  - key: MI_Plaster
+    material: {fileID: 2100000, guid: 82b901eed072f954a8eec7efd60c521f, type: 2}
+  - key: MI_Ranger
+    material: {fileID: 2100000, guid: 1789f3a9c4db7f64a8f4f550add26f81, type: 2}
+  - key: MI_Ranger_3
+    material: {fileID: 2100000, guid: df54a4da1f35cee4f99a49c1a99f7098, type: 2}
+  - key: MI_RedBrick
+    material: {fileID: 2100000, guid: 24c23644b47dcb74a979afb104155eed, type: 2}
+  - key: MI_Regular_Female
+    material: {fileID: 2100000, guid: 324ef25f6b615a048a951251da5cf28f, type: 2}
+  - key: MI_Regular_Male
+    material: {fileID: 2100000, guid: 8557a64c9690ad34a86107bb4515a41a, type: 2}
+  - key: MI_RockTrim
+    material: {fileID: 2100000, guid: 8d365b162f718e64ab8447d5ca54cb46, type: 2}
+  - key: MI_RoundTiles
+    material: {fileID: 2100000, guid: 128b701f5cea0774aa8b9a4f97b3e480, type: 2}
+  - key: MI_Superhero_Female
+    material: {fileID: 2100000, guid: a028cd80a52037b499c28304ef77bdab, type: 2}
+  - key: MI_Superhero_Male
+    material: {fileID: 2100000, guid: d067584a289994747a7c2b8c6b60c9d6, type: 2}
+  - key: MI_UnevenBrick
+    material: {fileID: 2100000, guid: 508969b6634f1ec428d0df486021e216, type: 2}
+  - key: MI_Vine
+    material: {fileID: 2100000, guid: 97f219203dad1a14db9f298a34de7ef7, type: 2}
+  - key: MI_WindowGlass
+    material: {fileID: 2100000, guid: 5d43d93290d0db44f9ef0c4b3938b933, type: 2}
+  - key: MI_WoodTrim
+    material: {fileID: 2100000, guid: 5b6fef837b090b34faf687077829eec3, type: 2}
+  - key: MI_WoodTrim_Wear
+    material: {fileID: 2100000, guid: fcb18930b8ad8c74c9745fda802c29dd, type: 2}
+  - key: Mushrooms
+    material: {fileID: 2100000, guid: 010d0933ab99c264f905064ee8f5ad25, type: 2}
+  - key: PathRocks
+    material: {fileID: 2100000, guid: 537341909b25d194baeb828f7ee17b95, type: 2}
+  - key: Rocks
+    material: {fileID: 2100000, guid: 7be143b3e7041bf409c854057e99e520, type: 2}
+  sounds:
+  - key: ui_click
+    clips:
+    - {fileID: 8300000, guid: 1d1f07a011262eb4abb45d5b584bbc84, type: 3}
+    - {fileID: 8300000, guid: edfc83a0b2206a1429f2fcb161af576d, type: 3}
+    volume: 0.55
+  - key: ui_hover
+    clips:
+    - {fileID: 8300000, guid: a122432728b28e84bb66189c0fd5d131, type: 3}
+    - {fileID: 8300000, guid: 3f85401f015d39f4bb6f7afa1ac2844a, type: 3}
+    volume: 0.22
+  - key: select
+    clips:
+    - {fileID: 8300000, guid: 328f5ed705dc3c34bb9aa6eb9118bd32, type: 3}
+    - {fileID: 8300000, guid: e0dd7fcc189a1a943b84950609678728, type: 3}
+    volume: 0.6
+  - key: tool_select
+    clips:
+    - {fileID: 8300000, guid: aeef9c4c84acc6b4ea9d444bff4d160b, type: 3}
+    - {fileID: 8300000, guid: 09e596f09b3db0346b591384e9b69f92, type: 3}
+    volume: 0.55
+  - key: error
+    clips:
+    - {fileID: 8300000, guid: 7db4b39c2504fe34284690d71cdaeeee, type: 3}
+    - {fileID: 8300000, guid: f1ec27bb512582244b5e3b35796f2bf1, type: 3}
+    volume: 0.55
+  - key: save
+    clips:
+    - {fileID: 8300000, guid: 7d3cd5b9691e0b24faca7c0112d4929a, type: 3}
+    volume: 0.7
+  - key: plan
+    clips:
+    - {fileID: 8300000, guid: ccac1709b5672b74b9eda6df8a8c2b88, type: 3}
+    - {fileID: 8300000, guid: e20ee57ff14613f498a7444260bbaf3d, type: 3}
+    volume: 0.7
+  - key: undo
+    clips:
+    - {fileID: 8300000, guid: a41bcc31f6b13dc4e9c5490419f33767, type: 3}
+    - {fileID: 8300000, guid: d0d65b24b41d52d4d9e0c7dfd64d61cc, type: 3}
+    volume: 0.7
+  - key: door_open
+    clips:
+    - {fileID: 8300000, guid: 97aeead7b1c61ca4a85e41d1fda9494d, type: 3}
+    - {fileID: 8300000, guid: 7419b2c13800f054493640789a829592, type: 3}
+    volume: 0.8
+  - key: door_close
+    clips:
+    - {fileID: 8300000, guid: d5a243a8bf11aa24db6d7e79d4595ed0, type: 3}
+    - {fileID: 8300000, guid: 3a94057385d09574a881d7791f3570ea, type: 3}
+    - {fileID: 8300000, guid: 18376ef108d677147b393927973f7428, type: 3}
+    - {fileID: 8300000, guid: 1e4de05798043ac4e8502fa054b94e4d, type: 3}
+    volume: 0.8
+  - key: build_knock
+    clips:
+    - {fileID: 8300000, guid: 2fd99efbff529b747b71437d2a126dd8, type: 3}
+    - {fileID: 8300000, guid: 798f5c7276afe2e4e9365f078104c805, type: 3}
+    - {fileID: 8300000, guid: f8865ff6fd1ed7f41ba08ff84f20f8d7, type: 3}
+    - {fileID: 8300000, guid: d2650158983b8164c87e226f31f41b36, type: 3}
+    - {fileID: 8300000, guid: d2d04c4822a4792469b545ccd6ef739e, type: 3}
+    volume: 0.75
+  - key: build_tile
+    clips:
+    - {fileID: 8300000, guid: e7fc1ddb208c3ed4aba93a22c04ac5b3, type: 3}
+    - {fileID: 8300000, guid: 57daf8bf101682a49a7a239a5fd4a2d3, type: 3}
+    - {fileID: 8300000, guid: 75476e55a0f0f024ba649bc034c31f8e, type: 3}
+    - {fileID: 8300000, guid: 4f34f0e073bcebb48ae1f866772d5f7d, type: 3}
+    - {fileID: 8300000, guid: 003bbf31fd2c4de48853e0bf6c9e6e26, type: 3}
+    volume: 0.55
+  - key: build_complete
+    clips:
+    - {fileID: 8300000, guid: 65279334c049d8b418dc0f3e498c2d2c, type: 3}
+    - {fileID: 8300000, guid: e9957f99987b3464d8ce1ebc7e52b3b8, type: 3}
+    - {fileID: 8300000, guid: b9cda334f97a3814c84c3474454afccd, type: 3}
+    volume: 0.9
+  - key: hammer
+    clips:
+    - {fileID: 8300000, guid: 5c74208e5695c5348be87f83b05d9245, type: 3}
+    - {fileID: 8300000, guid: 6db414859d6c5ce4ebb2a49231650629, type: 3}
+    - {fileID: 8300000, guid: 56c01dc352a868a42850f9b2c8ccebc2, type: 3}
+    - {fileID: 8300000, guid: 57be38090cd702c4b9d250cfe8ddb4e6, type: 3}
+    - {fileID: 8300000, guid: 056aa5eb950e4084c85099f4d7a32c50, type: 3}
+    volume: 0.75
+  - key: chop
+    clips:
+    - {fileID: 8300000, guid: 2d9e4dacfcd018d4882887bec50cf0dc, type: 3}
+    - {fileID: 8300000, guid: 6177962ad20223146be1a11df18fc535, type: 3}
+    - {fileID: 8300000, guid: 5b307360a3b33f54aa08686d2bd023fc, type: 3}
+    - {fileID: 8300000, guid: f018cc1c11d76ae44a71c21db4ebe49a, type: 3}
+    - {fileID: 8300000, guid: 78d07108e2d9b0c4192163df7faff835, type: 3}
+    - {fileID: 8300000, guid: e701f77fdb8e0dc45929786ce5df3918, type: 3}
+    volume: 0.9
+  - key: tree_creak
+    clips:
+    - {fileID: 8300000, guid: 5259aa2f1522d864190f88340900d4a6, type: 3}
+    - {fileID: 8300000, guid: da1dd474b04481c40aa4549374510ae3, type: 3}
+    - {fileID: 8300000, guid: 80821666c7082a549b5939028c06324b, type: 3}
+    volume: 0.8
+  - key: tree_fall
+    clips:
+    - {fileID: 8300000, guid: e666168b0fef44246aa563162f5dd82e, type: 3}
+    volume: 1
+  - key: harvest
+    clips:
+    - {fileID: 8300000, guid: 79206da504079a744951ea7e0c6f7501, type: 3}
+    - {fileID: 8300000, guid: cacd2bf6f0033e64db1173c02d829f61, type: 3}
+    - {fileID: 8300000, guid: 7d76e1b0aedc28b419eded2c10164bc0, type: 3}
+    - {fileID: 8300000, guid: 317cc2e5bf389ab489da4bcdb9686e52, type: 3}
+    - {fileID: 8300000, guid: b3d603c103bf7544f83f771505d7ff2a, type: 3}
+    volume: 0.7
+  - key: harvest_cut
+    clips:
+    - {fileID: 8300000, guid: 821bd6a9c8332e74cb563347874306a6, type: 3}
+    - {fileID: 8300000, guid: 5727bf16ca5bbdd40b72ebcdc0a252f0, type: 3}
+    volume: 0.6
+  - key: step_grass
+    clips:
+    - {fileID: 8300000, guid: 860a48f17531b3c4aa324d779c47e948, type: 3}
+    - {fileID: 8300000, guid: b5cf8f613c69dce49a925945af5579b7, type: 3}
+    - {fileID: 8300000, guid: da372bcd15b04994c9c79c6bc0389468, type: 3}
+    - {fileID: 8300000, guid: 7445d78fb38067a4e8cf665b1ccb661f, type: 3}
+    - {fileID: 8300000, guid: 5ca4811816c2d824191ada47bcc13ea7, type: 3}
+    volume: 0.45
+  - key: step_dirt
+    clips:
+    - {fileID: 8300000, guid: d4ae6d3b7da9ee64abcf8835504aec9c, type: 3}
+    - {fileID: 8300000, guid: 7b1bdf0be150c30428029850ff18dad8, type: 3}
+    - {fileID: 8300000, guid: 6c4e1f040c8872d42b41808395d0aa0e, type: 3}
+    - {fileID: 8300000, guid: 36e579cc0bc938340b362cfb3e00dc9f, type: 3}
+    - {fileID: 8300000, guid: 07631e39ff69366448418c43ab07c36e, type: 3}
+    volume: 0.45
+  - key: step_wood
+    clips:
+    - {fileID: 8300000, guid: dd590a6e54a31264a907bd8d4ee65d1c, type: 3}
+    - {fileID: 8300000, guid: 966269e38458015439e3a9bb0872b61c, type: 3}
+    - {fileID: 8300000, guid: 2fe31dd38e2438045b8fd32e6b0e3122, type: 3}
+    - {fileID: 8300000, guid: d848bf6614bac4e4c93038a352d01f58, type: 3}
+    - {fileID: 8300000, guid: a37004fed8dd71846878f0ecaabada38, type: 3}
+    volume: 0.5
+  - key: milestone
+    clips:
+    - {fileID: 8300000, guid: 1b132de99cd5ae042861a5322e3c4474, type: 3}
+    volume: 1
+  - key: complete_chime
+    clips:
+    - {fileID: 8300000, guid: 25ab17cdc9f9296469288212da4cf396, type: 3}
+    volume: 1
+  - key: summon
+    clips:
+    - {fileID: 8300000, guid: 12c37066e03fe07449c5895aebf5961d, type: 3}
+    volume: 1
+  - key: poof
+    clips:
+    - {fileID: 8300000, guid: 54da3dd9031f50d47a9dd4869032df03, type: 3}
+    volume: 0.9
+  - key: river_create
+    clips:
+    - {fileID: 8300000, guid: fc33ca3728f670d498a495801f6aa1ed, type: 3}
+    volume: 1
+  - key: water_rush
+    clips:
+    - {fileID: 8300000, guid: 0b2032d7222fd6b4aa74a8d7fbd335a7, type: 3}
+    volume: 0.9
+  - key: forest_plant
+    clips:
+    - {fileID: 8300000, guid: 23be76668a8a289468a0bf1b117b3474, type: 3}
+    volume: 1
+  - key: splash
+    clips:
+    - {fileID: 8300000, guid: eb4930d21f8c83c43a7be23a0df52f70, type: 3}
+    volume: 0.9
+  - key: splash_small
+    clips:
+    - {fileID: 8300000, guid: e64fff9dcef932346b96aaab43494038, type: 3}
+    volume: 0.8
+  - key: water_scoop
+    clips:
+    - {fileID: 8300000, guid: e4ec98c88fae53040b2696adde5be8c3, type: 3}
+    volume: 0.8
+  - key: warning
+    clips:
+    - {fileID: 8300000, guid: aee8de16bc8d4c34786600c9c1bfa416, type: 3}
+    volume: 0.8
+  - key: hint
+    clips:
+    - {fileID: 8300000, guid: 92db7fd179b6d2f4da9dd4aa6b5df35e, type: 3}
+    volume: 0.7
+  - key: amb_day
+    clips:
+    - {fileID: 8300000, guid: 26011181b5b5fbe48aa2c85005e89990, type: 3}
+    volume: 1
+  - key: amb_night
+    clips:
+    - {fileID: 8300000, guid: 2af845cd59fdaf04aab2a04e85cbf36e, type: 3}
+    volume: 1
+  - key: amb_wind
+    clips:
+    - {fileID: 8300000, guid: 28041d21c620d43418aff53a4b5f1d05, type: 3}
+    volume: 0.85
+  - key: amb_river
+    clips:
+    - {fileID: 8300000, guid: 962724644596a1f4e88d7d3d08b3db04, type: 3}
+    volume: 1
+  - key: amb_fire
+    clips:
+    - {fileID: 8300000, guid: ee7882731ce18e14fa0fb3f65b25d7dd, type: 3}
+    volume: 1
+  - key: terrain_rumble
+    clips:
+    - {fileID: 8300000, guid: 61cd976d54fe8174ca2d4ec6ddef3029, type: 3}
+    volume: 0.9
+  icons:
+  - key: Icon_Axe
+    sprite: {fileID: 21300000, guid: 0452089de669e484aa015b27f8ef4449, type: 3}
+  - key: Icon_Bed
+    sprite: {fileID: 21300000, guid: c6c086ec1c5c3af45b9b134297caca39, type: 3}
+  - key: Icon_Bridge
+    sprite: {fileID: 21300000, guid: 19b62895bcf83c341b8d931ed2293409, type: 3}
+  - key: Icon_Camera
+    sprite: {fileID: 21300000, guid: 8907ddb7857c75d48a2d834db93d3fba, type: 3}
+  - key: Icon_Check
+    sprite: {fileID: 21300000, guid: 2ea9fdaa66a873d4890529327a36a2d6, type: 3}
+  - key: Icon_Close
+    sprite: {fileID: 21300000, guid: 78cc0b8fa4e1f90428512754e1af908a, type: 3}
+  - key: Icon_Exit
+    sprite: {fileID: 21300000, guid: f5349d141b9487641abbab594ac5babd, type: 3}
+  - key: Icon_Fast
+    sprite: {fileID: 21300000, guid: b586eb585c3cb654cba2c1f17931f050, type: 3}
+  - key: Icon_Faster
+    sprite: {fileID: 21300000, guid: 6f60b79037bfe804e8048cd41baac37f, type: 3}
+  - key: Icon_Fish
+    sprite: {fileID: 21300000, guid: 9a144d0be6b8d6d41a87294c8408ef16, type: 3}
+  - key: Icon_Flatten
+    sprite: {fileID: 21300000, guid: 7c61033688bf2d14e95b3e8d18855fdc, type: 3}
+  - key: Icon_Follow
+    sprite: {fileID: 21300000, guid: 7adb3b4e1fd679f4b97127488a0e3404, type: 3}
+  - key: Icon_Food
+    sprite: {fileID: 21300000, guid: fdf0eeaf8c8c68f4e99548c768a954d0, type: 3}
+  - key: Icon_Forest
+    sprite: {fileID: 21300000, guid: d9ce0ec6dcea1dd4abaa15ee7639b3e2, type: 3}
+  - key: Icon_Gear
+    sprite: {fileID: 21300000, guid: a01ab07b625c88f4bb9aed43c26f346f, type: 3}
+  - key: Icon_Hammer
+    sprite: {fileID: 21300000, guid: c7010073b599e2a428594471c7c963c8, type: 3}
+  - key: Icon_Heart
+    sprite: {fileID: 21300000, guid: 22637d127ab03b849b3416a3d09bc4ea, type: 3}
+  - key: Icon_House
+    sprite: {fileID: 21300000, guid: b160cbe4b8b99334f9886b501d3c277d, type: 3}
+  - key: Icon_Info
+    sprite: {fileID: 21300000, guid: 216e5b4729722524b9c5fcd9148942c7, type: 3}
+  - key: Icon_Load
+    sprite: {fileID: 21300000, guid: 6a35a6d406ef2684e83898a6b07314e8, type: 3}
+  - key: Icon_Lower
+    sprite: {fileID: 21300000, guid: 4f9f153ffbe918e4191652eccbf99be6, type: 3}
+  - key: Icon_Menu
+    sprite: {fileID: 21300000, guid: afd799ae7d120fe41ba3cb66e94cd91e, type: 3}
+  - key: Icon_Moon
+    sprite: {fileID: 21300000, guid: c6d812e79d8eb964783fa43699611c24, type: 3}
+  - key: Icon_Observe
+    sprite: {fileID: 21300000, guid: cc2198512f685944e89bdc7f10ce1d51, type: 3}
+  - key: Icon_Pause
+    sprite: {fileID: 21300000, guid: 287f13f6f2c2f3849857ad74d35aaf1f, type: 3}
+  - key: Icon_Play
+    sprite: {fileID: 21300000, guid: 2c96258afb2276e4cae066ef04eb6e3c, type: 3}
+  - key: Icon_Population
+    sprite: {fileID: 21300000, guid: fb48e134fd21b9544a387c1f61fc36c2, type: 3}
+  - key: Icon_Raise
+    sprite: {fileID: 21300000, guid: bd91d080cc64a224c98d1b376cf6dbaa, type: 3}
+  - key: Icon_River
+    sprite: {fileID: 21300000, guid: c2a75e559fbbd9a498ee886d18fe1e3e, type: 3}
+  - key: Icon_Save
+    sprite: {fileID: 21300000, guid: 6d84ed11dc495ea48bb6d748c909f7c0, type: 3}
+  - key: Icon_Scroll
+    sprite: {fileID: 21300000, guid: 7f598a2ab7cec2e409f7e8020ca50f19, type: 3}
+  - key: Icon_Sleep
+    sprite: {fileID: 21300000, guid: 264b07fa3aaf125479aecfb321d2f0a3, type: 3}
+  - key: Icon_Sound
+    sprite: {fileID: 21300000, guid: a439071ccd2b1f04281fdfa5a35381b0, type: 3}
+  - key: Icon_Star
+    sprite: {fileID: 21300000, guid: f79a5c9428d277c47a6fb8080048198f, type: 3}
+  - key: Icon_Storage
+    sprite: {fileID: 21300000, guid: a070d5dc481cf07438a36e778b3f347f, type: 3}
+  - key: Icon_Summon
+    sprite: {fileID: 21300000, guid: 3b47748b5e4a7c541ae2d37998bd43b1, type: 3}
+  - key: Icon_Sun
+    sprite: {fileID: 21300000, guid: b9071c2ad6254f742a0088053da13402, type: 3}
+  - key: Icon_Target
+    sprite: {fileID: 21300000, guid: c2a1365b2f4afd048bbdf37d97489da2, type: 3}
+  - key: Icon_Tree
+    sprite: {fileID: 21300000, guid: 83e17094754439141a32ef1537704692, type: 3}
+  - key: Icon_Undo
+    sprite: {fileID: 21300000, guid: 8bdf24caebb0ae446b681d8e2d4a9013, type: 3}
+  - key: Icon_Warning
+    sprite: {fileID: 21300000, guid: 7330844297b0d054db85df340e050267, type: 3}
+  - key: Icon_Water
+    sprite: {fileID: 21300000, guid: 32f3c806d7ce6ac4698db621fa58a1fc, type: 3}
+  - key: Icon_Wood
+    sprite: {fileID: 21300000, guid: f1d616338be79704284248c93b2bfcbe, type: 3}
+  textures:
+  - key: FX_Chip
+    texture: {fileID: 2800000, guid: cb145bc434a9c0d489cb0e5d0d92fa46, type: 3}
+  - key: FX_Flame
+    texture: {fileID: 2800000, guid: 6cb2f86337873c14b8fe7c256e280468, type: 3}
+  - key: FX_Leaf
+    texture: {fileID: 2800000, guid: 3a700a1772ac0dd4fb86cb6107b452f4, type: 3}
+  - key: FX_Smoke
+    texture: {fileID: 2800000, guid: 3bb7758af4d7f664788cdea00f888bd7, type: 3}
+  - key: FX_SoftDot
+    texture: {fileID: 2800000, guid: 297068119405d7f498e253eb098948c8, type: 3}
+  - key: FX_Spark
+    texture: {fileID: 2800000, guid: ac9608e113acae84a9d1455fcfed769f, type: 3}
+  - key: UI_Brush
+    texture: {fileID: 2800000, guid: 14380a11fb3db7542ae03d97095db531, type: 3}
+  - key: UI_Dash
+    texture: {fileID: 2800000, guid: a642ffc98d72a1b43aaed5f6c55e622c, type: 3}
+  - key: UI_SelectRing
+    texture: {fileID: 2800000, guid: 526a36f5c40f6684fbfe34b4a937dade, type: 3}
+  - key: Water_Ripple_N
+    texture: {fileID: 2800000, guid: bc087ed1958f34a4da37db92f5689e8c, type: 3}
+  - key: Ground_Cliff_D
+    texture: {fileID: 2800000, guid: aab916afc48dabc44906cb77d5d71497, type: 3}
+  - key: Ground_Cliff_N
+    texture: {fileID: 2800000, guid: 8fad3b4c52910584fa14df5a56152fa5, type: 3}
+  - key: Ground_ForestFloor_D
+    texture: {fileID: 2800000, guid: 25e304cc4017fe7478c304fed3226dca, type: 3}
+  - key: Ground_ForestFloor_N
+    texture: {fileID: 2800000, guid: ca6a4f57c9965f444ac80ac5693966e4, type: 3}
+  - key: Ground_Grass_D
+    texture: {fileID: 2800000, guid: a1714eb50f5c30b4e80bb7b74a41a544, type: 3}
+  - key: Ground_Grass_N
+    texture: {fileID: 2800000, guid: 9eb8869b1219f8040b03af00785f5ecc, type: 3}
+  - key: Ground_Meadow_D
+    texture: {fileID: 2800000, guid: a7ab72e7c5aa9784fa2e1c8ad6d73dfc, type: 3}
+  - key: Ground_Meadow_N
+    texture: {fileID: 2800000, guid: b606e05f410772440a749757f8345ff6, type: 3}
+  - key: Ground_Path_D
+    texture: {fileID: 2800000, guid: 8f3dd2a438654fd46b26a41261d15262, type: 3}
+  - key: Ground_Path_N
+    texture: {fileID: 2800000, guid: a8f0fdab1aa60aa449bd360a62f0bf73, type: 3}
+  - key: Ground_Riverbank_D
+    texture: {fileID: 2800000, guid: ec12ef93b8dcd334284b8765f4c19ead, type: 3}
+  - key: Ground_Riverbank_N
+    texture: {fileID: 2800000, guid: 3f66a114844763f408e9f52fe3ff59af, type: 3}
+  - key: Ground_Soil_D
+    texture: {fileID: 2800000, guid: bbbc4ec96cd101a489e56e7cb01b1a96, type: 3}
+  - key: Ground_Soil_N
+    texture: {fileID: 2800000, guid: 5b8b64ca7a00e344db149b2861203aac, type: 3}
+  - key: Sky_PartlyCloudy
+    texture: {fileID: 2800000, guid: d4c392556bf139e479d6291594dea029, type: 3}
+  - key: Sky_Day
+    texture: {fileID: 2800000, guid: d4c392556bf139e479d6291594dea029, type: 3}
+  maleVillager: {fileID: 2707844592651111962, guid: 0d7d1bfcf6ebbdc4a8dacc7e24fe3a6b,
+    type: 3}
+  femaleVillager: {fileID: 4960516532489716460, guid: 5be798e4bc6de834a9cb84141f9be178,
+    type: 3}
+  villagerAnimator: {fileID: 9100000, guid: aba03b14c05bbaa409836b880e1f598a, type: 2}
+  terrainLayers:
+  - {fileID: 8574412962073106934, guid: 57f801f7664c87142a3420033c3e5747, type: 2}
+  - {fileID: 8574412962073106934, guid: c7fcfa7f5d3b0564fae0f40f4ba61960, type: 2}
+  - {fileID: 8574412962073106934, guid: 2af803f0d77a35140afe243005e1ea9e, type: 2}
+  - {fileID: 8574412962073106934, guid: 4248dcd5ce037184f9968816dad9ed9f, type: 2}
+  - {fileID: 8574412962073106934, guid: 9f198d7fbabc5d443a4918908e83af4f, type: 2}
+  - {fileID: 8574412962073106934, guid: 721b88c3b957aeb42b2f1e12094eeccf, type: 2}
+  - {fileID: 8574412962073106934, guid: a89dac7b98d500947b6aa821c172e567, type: 2}
+  terrainMaterial: {fileID: 2100000, guid: 87f256f587bac2f448a6b3030f9f4cc2, type: 2}
+  skyMaterial: {fileID: 2100000, guid: 93075b54c0552f147a578cb79848c594, type: 2}
+  waterMaterial: {fileID: 2100000, guid: f99ec202f7065b147a6e65d9fcb6cbf8, type: 2}
+  litShader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  foliageShader: {fileID: 4800000, guid: 4a5f626362a489744a6d38752f257453, type: 3}
+  overlayShader: {fileID: 4800000, guid: aa1858e740da0f646b4884ea52a94a0c, type: 3}
+  particleShader: {fileID: 4800000, guid: e3a0695a6df065846b428fc9b7d59eee, type: 3}
+  waterShader: {fileID: 4800000, guid: 05c458ecfd1c3ec4c9b906bea13318cd, type: 3}
+  skyShader: {fileID: 4800000, guid: fa3135d61d3ce9442bc4611991163ea8, type: 3}
+  vertexLitShader: {fileID: 4800000, guid: 5691ea808b5d8144b9ad6cbd18f8a139, type: 3}
+  uiFont: {fileID: 12800000, guid: 00d8fb84b9a7907498a91e43a77f2da7, type: 3}
+  titleFont: {fileID: 12800000, guid: d635cd2430c341443910e48225b256a6, type: 3}
+  music:
+  - {fileID: 8300000, guid: a43bd5bb6a1501e40a2c33246bf7b5ad, type: 3}
+  - {fileID: 8300000, guid: 3d0f39581539b704e888748777a236f6, type: 3}
+  - {fileID: 8300000, guid: 9be11fd0ea01a7941ac180573aa9048b, type: 3}
