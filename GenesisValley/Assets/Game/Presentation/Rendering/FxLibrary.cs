@@ -26,6 +26,16 @@ namespace GenesisValley.Presentation
         {
             if (_built) return;
             _built = true;
+            try { Build(); }
+            catch (System.Exception e)
+            {
+                Debug.LogError("[GenesisValley] 粒子特效初始化失败，特效将被跳过：" + e.Message);
+                Debug.LogException(e);
+            }
+        }
+
+        private void Build()
+        {
             var art = GameServices.Art;
             _dot = art.Texture("FX_SoftDot") ?? MakeDot();
             _smoke = art.Texture("FX_Smoke") ?? _dot;
@@ -176,6 +186,7 @@ namespace GenesisValley.Presentation
         public void SummonBeam(Vector3 position)
         {
             EnsureBuilt();
+            if (_beamTemplate == null) return;
             var beam = Instantiate(_beamTemplate, position + Vector3.up * 11f, Quaternion.identity, transform);
             beam.gameObject.SetActive(true);
             beam.Play();
@@ -190,6 +201,7 @@ namespace GenesisValley.Presentation
         private ParticleSystem Clone(ParticleSystem template, Transform parent, Vector3 localPos)
         {
             EnsureBuilt();
+            if (template == null || parent == null) return null;
             var ps = Instantiate(template, parent, false);
             ps.transform.localPosition = localPos;
             ps.transform.localRotation = Quaternion.identity;

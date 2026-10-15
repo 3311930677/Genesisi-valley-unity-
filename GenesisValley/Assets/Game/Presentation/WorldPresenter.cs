@@ -59,18 +59,29 @@ namespace GenesisValley.Presentation
         {
             World = w;
             // Terrain first: everything else snaps to its heights.
-            Terrain.Bind(w);
-            Water.Bind(w);
-            Trees.Bind(w);
-            Buildings.Bind(w);
-            Camp.Bind(w);
-            Piles.Bind(w);
-            Decor.Bind(w);
-            Villagers.Bind(w);
+            // Each layer binds independently: a missing asset in one layer must never abort world loading.
+            SafeBind("Terrain", () => Terrain.Bind(w));
+            SafeBind("Water", () => Water.Bind(w));
+            SafeBind("Trees", () => Trees.Bind(w));
+            SafeBind("Buildings", () => Buildings.Bind(w));
+            SafeBind("Camp", () => Camp.Bind(w));
+            SafeBind("Piles", () => Piles.Bind(w));
+            SafeBind("Decor", () => Decor.Bind(w));
+            SafeBind("Villagers", () => Villagers.Bind(w));
             w.PresentationFullRefresh = false;
             // Events produced while generating/loading are history, not news.
             w.Events.Pending.Clear();
             WorldBound?.Invoke(w);
+        }
+
+        private static void SafeBind(string layer, System.Action bind)
+        {
+            try { bind(); }
+            catch (System.Exception e)
+            {
+                Debug.LogError($"[GenesisValley] 绑定 {layer} 图层失败，已跳过该图层继续加载：{e.Message}");
+                Debug.LogException(e);
+            }
         }
 
         /// <summary>Called by <see cref="TerrainPresenter"/> after heights were uploaded for a world-space rectangle.</summary>
