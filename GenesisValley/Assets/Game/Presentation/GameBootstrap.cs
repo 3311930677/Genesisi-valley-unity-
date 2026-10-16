@@ -354,6 +354,13 @@ namespace GenesisValley.Presentation
             if (InputBindings.Down(GameAction.FocusCamp)) CameraRig.FlyTo(CampPoint(World), 80f, 1.1f);
         }
 
+        /// <summary>Advances the simulation by <paramref name="ticks"/> fixed steps right now (diagnostics / warm-up).</summary>
+        public void StepTicks(int ticks)
+        {
+            if (Runner == null) return;
+            for (int i = 0; i < ticks; i++) StepOnce();
+        }
+
         public void TogglePause() { UserPaused = !UserPaused; Notify(UserPaused ? "已暂停" : "继续", ToastKind.Info); }
         public void SetPaused(bool paused) => UserPaused = paused;
 

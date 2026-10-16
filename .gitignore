@@ -33,3 +33,6 @@
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Quality capture output (screenshots / reports)
+/GenesisValley/QualityCaptures/

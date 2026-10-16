@@ -34,7 +34,7 @@ namespace GenesisValley.Presentation
         private float _targetYaw, _targetDistance, _pitchOffset;
         // smoothed state
         private Vector3 _focus;
-        private float _focusY, _yaw, _distance, _pitch;
+        private float _focusY, _yaw, _distance, _pitch, _lift;
 
         private Func<Vector3?> _follow;
         private Vector3 _grabPoint;
@@ -120,6 +120,16 @@ namespace GenesisValley.Presentation
             _targetDistance = _distance = distance;
             _pitchOffset = -6f;
             _fly = null;
+            Apply(true);
+        }
+
+        /// <summary>Instantly places the camera (no flight, no smoothing). Used by fixed review shots.</summary>
+        public void SnapTo(Vector3 focus, float distance, float yaw)
+        {
+            _orbit = false; _fly = null; _follow = null; _pitchOffset = 0f; _shake = 0f;
+            _targetFocus = _focus = new Vector3(focus.x, 0, focus.z);
+            _targetDistance = _distance = Mathf.Clamp(distance, MinDistance, MaxDistance);
+            _targetYaw = _yaw = yaw;
             Apply(true);
         }
 
@@ -293,12 +303,21 @@ namespace GenesisValley.Presentation
             var rot = Quaternion.Euler(_pitch, _yaw, 0);
             var focus = new Vector3(_focus.x, _focusY, _focus.z);
             var pos = focus - rot * Vector3.forward * _distance;
-            // Terrain clearance along the way to the lens.
-            float ground = SampleHeight(pos.x, pos.z);
-            float minY = ground + 2.5f + _distance * 0.02f;
-            if (pos.y < minY)
+            // Terrain clearance along the whole sight line (not only under the lens), so hills between the
+            // camera and the focus never cut into the view. Smoothed so the lift does not pop.
+            float minY = SampleHeight(pos.x, pos.z) + 2.5f + _distance * 0.02f;
+            for (int i = 1; i <= 5; i++)
             {
-                pos.y = minY;
+                float t = i / 6f;
+                float gx = Mathf.Lerp(focus.x, pos.x, t), gz = Mathf.Lerp(focus.z, pos.z, t);
+                float need = SampleHeight(gx, gz) + 1.8f + _distance * 0.01f;
+                if (need > focus.y) minY = Mathf.Max(minY, focus.y + (need - focus.y) / t);
+            }
+            float lift = Mathf.Max(0f, minY - pos.y);
+            _lift = snap ? lift : Mathf.Lerp(_lift, lift, Ease.Damp(lift > _lift ? 14f : 4f, dt));
+            if (_lift > 0.01f)
+            {
+                pos.y += _lift;
                 rot = Quaternion.LookRotation(focus - pos);
             }
             if (_shake > 0.001f)
